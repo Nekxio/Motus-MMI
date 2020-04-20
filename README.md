@@ -4,7 +4,6 @@ Le jeu télé iconique de France 2 enfin disponible chez vous où VOUS êtes le 
 
 ## Installation
 
-- Il est possible de jouer directement depuis votre navigateur via ce site: [https://difabiolorenzo.github.io/motusJS/]
 - Pour jouer en local, télécharger le répertoire, puis lancer le fichier **index.html** dans un navigateur.
 
 ## Règles
