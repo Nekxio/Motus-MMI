@@ -45,6 +45,9 @@ html {
 @-ms-viewport {
   width: device-width; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
@@ -159,7 +162,8 @@ svg:not(:root) {
   overflow: hidden; }
 
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse; 
+  border: 1px var(--gray);}
 
 caption {
   padding-top: 0.75rem;
@@ -2613,56 +2617,6 @@ button.bg-light:focus {
   .text-xl-center {
     text-align: center !important; } }
 
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    text-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
-  a:not(.btn) {
-    text-decoration: underline; }
-  abbr[title]::after {
-    content: " (" attr(title) ")"; }
-  pre {
-    white-space: pre-wrap !important; }
-  pre,
-  blockquote {
-    border: 1px solid #adb5bd;
-    page-break-inside: avoid; }
-  thead {
-    display: table-header-group; }
-  tr,
-  img {
-    page-break-inside: avoid; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; }
-  @page {
-    size: a3; }
-  body {
-    min-width: 992px !important; }
-  .container {
-    min-width: 992px !important; }
-  .navbar {
-    display: none; }
-  .badge {
-    border: 1px solid #000; }
-  .table {
-    border-collapse: collapse !important; }
-    .table td,
-    .table th {
-      background-color: #fff !important; }
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #dee2e6 !important; } }
-
 body {
   font-family: "Work Sans", Arial, sans-serif;
   background: #fff;
@@ -2946,7 +2900,7 @@ h1, h2, h3, h4, h5,
   .btn.btn-primary {
     border: 2px solid #FF4844;
     color: #FF4844;
-    background: white; }
+    background: transparent; }
     .btn.btn-primary:hover {
       border: 2px solid #FF4844;
       background: #FF4844;
@@ -3265,7 +3219,8 @@ h1, h2, h3, h4, h5,
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
-@-webkit-keyframes loader-rotate {
+
+  @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
