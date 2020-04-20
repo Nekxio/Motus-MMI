@@ -42,10 +42,7 @@ Si le mot est trouvé, l'équipe rapport 50 points, cette équipe à ensuite le 
 
 ## Inspiration
 - [https://www.france.tv/france-2/motus/]
-- [http://www.anagrammeur.com/jeux/motus/motus.php]
 
 ## Licences
 - Tous les sons et le principe du jeu sont sous les droits de France Télévisions
-- Sur les base du code de **Sogroo** avec son site [http://www.anagrammeur.com/jeux/motus/motus.php]
-- Les dictionnaires de mots sont tirés du Motus de **Sogroo** et de l'ODS4 présent dans **XScrabble** [ftp://ftp.ac-grenoble.fr/ge/educational_games]
 - jQuery est sous la license MIT [https://tldrlegal.com/license/mit-license]
