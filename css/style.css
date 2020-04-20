@@ -2650,7 +2650,7 @@ a {
     width: 100%; 
     left: 0; }
 
-  a.a-active:after {
+  a.a-active:after, #jeu:after {
     background: none; }
   
   .index-navbar-light.index-navbar-light.scrolled a:after {
