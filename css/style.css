@@ -141,9 +141,6 @@ a {
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
-  a:hover {
-    color: #34c0e7;
-    text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -1315,8 +1312,6 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1); }
 
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.5); }
@@ -1346,9 +1341,6 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1); }
-
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.5); }
@@ -2623,7 +2615,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 300;
-  color: #8b8b92; }
+  color: #212529; }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -2663,7 +2655,7 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .navbar-brand {
     color: #fff; }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 16px;
+    font-size: 1.3rem;
     padding-top: .9rem;
     padding-bottom: .9rem;
     padding-left: 20px;
@@ -3219,6 +3211,12 @@ h1, h2, h3, h4, h5,
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+#btn-accueil {
+  font-size: 2rem;}
+
+#jeu {
+  transition: .3s all ease;
+}
 
   @-webkit-keyframes loader-rotate {
   100% {
