@@ -2650,7 +2650,7 @@ a {
     width: 100%; 
     left: 0; }
 
-  a.a-active:after {
+  a.a-active:after, #jeu:after {
     background: none; }
   
   .ftco-navbar-light.ftco-navbar-light.scrolled a:after {
