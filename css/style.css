@@ -2834,12 +2834,12 @@ h1, h2, h3, h4, h5,
     content: '';
     opacity: .97;
     background: #FF4844;
-    background: -moz-linear-gradient(45deg, #FF4844 0%, #efac78 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, #FF4844), color-stop(100%, #efac78));
-    background: -webkit-linear-gradient(45deg, #FF4844 0%, #efac78 100%);
-    background: -o-linear-gradient(45deg, #FF4844 0%, #efac78 100%);
-    background: -ms-linear-gradient(45deg, #FF4844 0%, #efac78 100%);
-    background: linear-gradient(45deg, #FF4844 0%, #efac78 100%);
+    background: -moz-linear-gradient(45deg, #FF4844 0%, #ef7878 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #FF4844), color-stop(100%, #ef7878));
+    background: -webkit-linear-gradient(45deg, #FF4844 0%, #ef7878 100%);
+    background: -o-linear-gradient(45deg, #FF4844 0%, #ef7878 100%);
+    background: -ms-linear-gradient(45deg, #FF4844 0%, #ef7878 100%);
+    background: linear-gradient(45deg, rgb(248, 50, 47) 0%, #f7c82e 180%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448ef6', endColorstr='#af05a9', GradientType=1 ); }
 
 #particles-js {
