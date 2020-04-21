@@ -13,6 +13,11 @@
             width: 200px;
             font-size: 2rem;
         }
+		#check {
+			width: 100px;
+			font-size: 1.5rem;
+		}
+		
     </style>
 
     <body>
@@ -24,11 +29,18 @@
             <p id="affichage_mot"></p>
         </div>
 
-        <!--    
-        <div class="champ">
-            <input id="champ_entree">
+        
+		<div class="champ">
+            <input id="champ_entree" value="">
         </div>
-        -->
+        
+		<div class="validation">
+			<button id="check" type="button" onclick="validation();">Valider</button>
+		</div>
+		
+		<div class="aff_reponses">
+            <p id="reponses" value=""></p>
+        </div>
     </body>
 
 
