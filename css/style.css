@@ -3246,6 +3246,26 @@ h1, h2, h3, h4, h5,
   transition: .3s all ease;
 }
 
+#backup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 46, 46);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#backup:hover {
+  background-color: #555;
+}
+
   @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
