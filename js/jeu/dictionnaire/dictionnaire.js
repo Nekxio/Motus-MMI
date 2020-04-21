@@ -8,10 +8,3 @@ mot = ['CHIITE','MOTEUR','BATEAU','MIKADO','ANNEXE','TOMATE','BLEUET','MANOIR','
              'ATOMES','LARDON','SUSHIS','HOMARD','BEMOLS','LAITON','SAVEUR','ETOILE','BOHEME','LAVABO','SAPHIR','DOSAGE','COMBLE','LAVOIR','REVERS','DEFUNT','DEMONS','LAGONS','RAMEAU','DROGUE',
              'HOMMES','JOVIAL','ROTULE','ECURIE','FEMMES','GALLON','ROSEAU','EPONGE','MORALE','FLACON','RONFLE','FANION','MEULON','FLORAL','MUGUET','FAILLE','POMMES','ECOPER','MALADE','GARDER',
              'MIJOTE','FROLER','LAVAGE','TEMOIN','BOMBES','DOLLAR','GENOUX','SODIUM','CHROME','JALOUX','GIBIER','SENIOR','COMPTE','TURBAN','FLOTTE','REFLEX','MOTELS','TRIBUT','DISQUE','CENTRE']
-
-function generer() {
-    random = Math.ceil(Math.random()*199);
-    var mots_aleatoire = mot[random];
-
-    document.getElementById('affichage_mot').innerHTML = mots_aleatoire
-}
