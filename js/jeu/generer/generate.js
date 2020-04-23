@@ -34,10 +34,6 @@ function validation() {
 		}
 }
 
-
-
-
-/** 
 function choix(a,b) { //le a c'est pour this.value dans html, le b c'est le this.id dans le html
     console.log(a,b);
     
@@ -56,4 +52,3 @@ function choix(a,b) { //le a c'est pour this.value dans html, le b c'est le this
             break;
     }
 }
-**/
