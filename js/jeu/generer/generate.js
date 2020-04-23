@@ -20,4 +20,3 @@ function validation() {
 			alert("Win !");
 			}
 }
-
