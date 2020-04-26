@@ -1,3 +1,7 @@
+function focus { 
+    document.getElementById('champ_entree').focus(); 
+}; 
+
 function generer() {
     random = Math.ceil(Math.random()*199);
     var mots_aleatoire = mot[random];
