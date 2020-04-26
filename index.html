@@ -46,7 +46,7 @@
     <button onclick="topFunction()" id="backup" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" id="btn-accueil" href="#accueil"><img src="/images/motus_logo.png"/></a>
+      <a class="navbar-brand" id="btn-accueil" href="#accueil"><img src="./images/motus_logo.png"/></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -103,43 +103,70 @@
             <span class="subheading">Le jeu</span>
             <h2 class="mb-4">MOTUS</h2>
             <p>Sortirez-vous vainqueur de la grille Motus ?</p>
-            </div>     
-            <table class="table table-bordered ftco-animate text-center ">
-              <tr>
-                <td id="affichage_mot">$200/Month</td>
-                <td id="affichage_mot">$100/Month</td>
-                <td id="affichage_mot">$20/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-              </tr>
-              <tr>
-                <td id="affichage_mot">$200/Month</td>
-                <td id="affichage_mot">$100/Month</td>
-                <td id="affichage_mot">$20/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-              </tr>
-              <tr>
-                <td id="affichage_mot">$200/Month</td>
-                <td id="affichage_mot">$100/Month</td>
-                <td id="affichage_mot">$20/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-              </tr>
-              <tr>
-                <td id="affichage_mot">$200/Month</td>
-                <td id="affichage_mot">$100/Month</td>
-                <td id="affichage_mot">$20/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-                <td id="affichage_mot">$50/Month</td>
-              </tr>
-            </table>
+          </div>
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <div id="table">
+              <table class="table table-bordered">
+                <tr>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                </tr>
+                <tr>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                </tr>
+                <tr>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                </tr>
+                <tr>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                </tr>
+                <tr>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                </tr>
+                <tr>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                  <td id="affichage_mot">lettre</td>
+                </tr>
+              </table>
+            </div>
+            <div class="text-center ftco-animate">
+              <ul id="code_couleur">
+                <li style="color:rgb(92, 202, 40)";>Bonne lettre et<br>à la bonne place</li>
+                <li style="color:rgb(230, 169, 4)";>Bonne lettre mais<br>pas à la bonne place</li>
+                <li style="color:rgb(252, 50, 50)";>Lettre non existante</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="text-center mb-5 pb-5">
+        <div class="justify-content-center text-center mb-5 pb-5">
           <input id="champ_entree" class="uppercase" value="">
           <button type="button" class="btn btn-motus--primary btn-motus--inside uppercase" onclick="validation();">OK</button>
         </div>

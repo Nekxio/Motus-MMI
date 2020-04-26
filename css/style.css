@@ -3239,11 +3239,17 @@ h1, h2, h3, h4, h5,
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+#btn-accueil img{
+  width: 200px;
+  margin: auto;
+}
+
 #btn-accueil {
   font-size: 2rem;}
 
 #jeu {
   transition: .3s all ease;
+  margin-bottom: -100px;
 }
 
 #backup {
@@ -3266,15 +3272,32 @@ h1, h2, h3, h4, h5,
   background-color: #555;
 }
 
+#table{
+  display: inline-block;
+  padding-top: 20px;
+}
+
+ul#code_couleur{
+  padding-top: 50px;
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  white-space: normal;
+}
+
+ul#code_couleur li{
+  width: 250px;
+}
+
 #champ_entree{
   width: 360px;
-		background: rgb(119, 119, 119);
-    color: white;
-    font-family: "Work Sans", Arial, sans-serif;;
-		box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
-		border: 0;
-		outline: 0;
-		padding: 22px 18px;
+	background: rgb(119, 119, 119);
+  color: white;
+  font-family: "Work Sans", Arial, sans-serif;;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+	border: 0;
+	outline: 0;
+	padding: 22px 18px;
 }
 
 .uppercase {
