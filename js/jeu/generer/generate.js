@@ -9,24 +9,52 @@ function generer() { //Fonction permettant de prendre au hasard un mot dans le d
     document.getElementById("affiche").innerHTML = mots_aleatoire;
   }
 
-function validation() {
-	var mots_user = document.getElementById("champ_entree").value;
-	var mots_aleatoire = document.getElementById('affichage_mot').innerHTML;
+/*function validation() {
+	var mot_user = document.getElementById("champ_entree").value;
+	var mot_aleatoire = document.getElementById('affiche').value;
 
-		for (let i = 0; i < mots_aleatoire.length; i++) {
-  			if (mots_aleatoire.charAt[i] == mots_user.charAt[i]) {
-				console.log(mots_aleatoire[i]);
+		for (let i = 0; i < mot_aleatoire.length; i++) {
+  			if (mot_aleatoire == mot_user) {
+				console.log(mot_aleatoire);
 
-			} else if(mots_aleatoire[i] != mots_user[i]) {
+			} else if(mot_aleatoire != mot_user) {
 				console.log(".");
 
 				document.getElementById('affichage_mot').style.color='#801b0f';
 			}
 		}
 
-		if (mots_aleatoire == mots_user) {
+		if (mot_aleatoire == mot_user) {
 			alert("Win !");
 
 			document.getElementById('mybutton').style.color='#3d9939';
 		}
+}*/
+
+function ecrire() {
+    var mot_user = document.getElementById("champ_entree").value;
+
+	var res0 = mot_user.charAt(0);
+	document.getElementById("affichage_mot0").style.textTransform = "uppercase";
+    document.getElementById("affichage_mot0").innerHTML = res0;
+
+	var res1 = mot_user.charAt(1);
+	document.getElementById("affichage_mot1").style.textTransform = "uppercase";
+    document.getElementById("affichage_mot1").innerHTML = res1;
+
+	var res2 = mot_user.charAt(2);
+	document.getElementById("affichage_mot2").style.textTransform = "uppercase";
+    document.getElementById("affichage_mot2").innerHTML = res2;
+
+	var res3 = mot_user.charAt(3);
+	document.getElementById("affichage_mot3").style.textTransform = "uppercase";
+    document.getElementById("affichage_mot3").innerHTML = res3;
+
+	var res4 = mot_user.charAt(4);
+	document.getElementById("affichage_mot4").style.textTransform = "uppercase";
+    document.getElementById("affichage_mot4").innerHTML = res4;
+
+	var res5 = mot_user.charAt(5);
+	document.getElementById("affichage_mot5").style.textTransform = "uppercase";
+    document.getElementById("affichage_mot5").innerHTML = res5;
 }

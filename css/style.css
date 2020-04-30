@@ -782,7 +782,7 @@ fieldset:disabled a.btn {
   color: #FF4844;
   background-color: transparent; }
   .btn-link:hover {
-    color: #34c0e7;
+    color: rgb(255, 46, 46);
     text-decoration: underline;
     background-color: transparent;
     border-color: transparent; }
@@ -3277,7 +3277,7 @@ h1, h2, h3, h4, h5,
 
 #motus td{
   border: 2px solid rgba(0, 0, 0, 0.1);
-  width: 75px;
+  width: 75px !important;
   border-radius: 5px;
   font-size: 35px;
   font-family: sans-serif;
@@ -3301,14 +3301,15 @@ ul#code_couleur li{
 }
 
 #champ_entree{
-  width: 360px;
+  width: 360px !important;
 	background: rgb(119, 119, 119);
   color: white;
   font-family: "Work Sans", Arial, sans-serif;;
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1) !important;
 	border: 0;
 	outline: 0;
-	padding: 22px 18px;
+  padding: 22px 18px !important;
+  font-size: 20px;
 }
 
 .uppercase {
