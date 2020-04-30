@@ -38,21 +38,9 @@ function validation() {
 		}
 }
 
-function choix(a,b) { //le a c'est pour this.value dans html, le b c'est le this.id dans le html
-    console.log(a,b);
+
+function machin() {
+    var mots_aleatoire = document.getElementById('affichage_mot').innerHTML; 
+
     
-    switch(a) {
-        case"Rouge": 
-            console.log('couleur1');
-            document.getElementById('lebouton').style.backgroundColor='#ff0000';
-            break;
-        case"Jaune":
-            console.log('couleur2');
-            document.getElementById('lebouton').style.backgroundColor='#f2ff00';
-            break;
-        case"Bleu":
-            console.log('couleur3');
-            document.getElementById('lebouton').style.backgroundColor='#1900ff';
-            break;
-    }
 }
