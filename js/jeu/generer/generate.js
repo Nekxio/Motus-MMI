@@ -1,3 +1,7 @@
+function focus { 
+    document.getElementById('champ_entree').focus(); 
+}; 
+
 function generer() { //Fonction permettant de prendre au hasard un mot dans le dictionnaire.js et d'en afficher 2 caractères
     random = Math.ceil(Math.random()*199); //On stocke le code permettant la selection aléatoire d'un mot
     var mots_aleatoire = mot[random]; //On l'applique au dictionnaire de mots
@@ -29,4 +33,10 @@ function validation() {
 
 			document.getElementById('mybutton').style.color='#3d9939';
 		}
+}
+
+function machin() {
+    var mots_aleatoire = document.getElementById('affichage_mot').innerHTML; 
+
+    
 }
