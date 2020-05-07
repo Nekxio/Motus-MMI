@@ -1,3 +1,61 @@
+function playsound(sound) {
+	if (playsound_enabled == true) {
+		switch (sound) {
+			case "letter_ok":
+				$.playSound("src/sounds/lettre_ok.mp3");
+				break;
+			case "letter_bad":
+				$.playSound("src/sounds/lettre_mauvaise.mp3");
+				break;
+			case "letter_missing":
+				$.playSound("src/sounds/lettre_absente.mp3");
+				break;
+			case "error":
+				$.playSound("src/sounds/lettre_absente.mp3");
+				break;
+			case "letter_bonus":
+				$.playSound("src/sounds/lettre_bonus.mp3");
+				break;
+			case "wrong":
+				$.playSound("src/sounds/erreur.mp3");
+				break;
+			case "victory":
+				$.playSound("src/sounds/victory.mp3");
+				break;
+			case "temps_ecoule":
+				$.playSound("src/sounds/temps_ecoule.mp3");
+				break;
+			case "loose":
+				$.playSound("src/sounds/loose.mp3");
+				break;
+			case "grille_creation":
+				$.playSound("src/sounds/grille_creation.mp3");
+				break;
+			case "grille_numero":
+				$.playSound("src/sounds/grille_numero.mp3");
+				break;
+			case "grille_boule_noire":
+				$.playSound("src/sounds/grille_boule_noire.mp3");
+				break;
+			case "grille_numero_tire":
+				$.playSound("src/sounds/grille_numero_tire.mp3");
+				break;
+			case "motus":
+				$.playSound("src/sounds/motus.mp3");
+				break;
+			case "boule_magique":
+				$.playSound("src/sounds/boule_magique.mp3");
+				break;
+			case "jingle":
+				$.playSound("src/sounds/jingle_motus.mp3");
+				break;
+			default:
+				break;
+		}
+	}
+}
+
+
 function generer() { //Fonction permettant de prendre au hasard un mot dans le dictionnaire.js et d'en afficher 2 caractères
     random = Math.ceil(Math.random()*199); //On stocke le code permettant la selection aléatoire d'un mot
     var mots_aleatoire = mot[random]; //On l'applique au dictionnaire de mots
@@ -9,7 +67,7 @@ function generer() { //Fonction permettant de prendre au hasard un mot dans le d
     document.getElementById("affiche").innerHTML = mots_aleatoire;
   }
 
-/*function validation() {
+function validation() {
 	var mot_user = document.getElementById("champ_entree").value;
 	var mot_aleatoire = document.getElementById('affiche').value;
 
@@ -29,7 +87,7 @@ function generer() { //Fonction permettant de prendre au hasard un mot dans le d
 
 			document.getElementById('mybutton').style.color='#3d9939';
 		}
-}*/
+}
 
 function ecrire() {
     var mot_user = document.getElementById("champ_entree").value;
