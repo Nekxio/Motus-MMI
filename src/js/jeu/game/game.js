@@ -1,3 +1,4 @@
+//Un peu de musique pour se mettre dans l'ambiance Motus !
 var motus_sound = new Audio();
 motus_sound.src = "src/sounds/jingle_motus.mp3";
 motus_sound.volume = 0.3;
@@ -14,11 +15,16 @@ function generer() { //Fonction permettant de prendre au hasard un mot dans le d
 
 function validation() {
 	var mot_user = document.getElementById("champ_entree").value;
-	var mot_aleatoire = document.getElementById('affiche').innerHTML;
+    var mot_aleatoire = document.getElementById("affiche").innerHTML;
+    var points = 0;    
 
-	if(mot_user === mot_aleatoire){
-		alert('win');
-	}
+	for (var i = 0; i < mot_user.length; i++) {
+        if(mot_user.charAt(i) === mot_aleatoire.charAt(i));
+        points = points + 1;
+    }
+    if (points == 6) {
+        alert('win');
+    }
 }
 
 function ecrire() {
@@ -48,6 +54,7 @@ function ecrire() {
 	document.getElementById("affichage_mot5").style.textTransform = "uppercase";
     document.getElementById("affichage_mot5").innerHTML = res5;
 }
+
 /*
 	var tab_mot = new Array();
 	for(var i=0; i<6; i++){
