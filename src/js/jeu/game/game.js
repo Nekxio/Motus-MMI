@@ -135,5 +135,7 @@ function comparer() {
 
     if((document.getElementById('l0_c1').innerHTML == document.getElementById('l1_c1').innerHTML) && (document.getElementById('l0_c2').innerHTML == document.getElementById('l1_c2').innerHTML) && (document.getElementById('l0_c3').innerHTML == document.getElementById('l1_c3').innerHTML) && (document.getElementById('l0_c4').innerHTML == document.getElementById('l1_c4').innerHTML) && (document.getElementById('l0_c5').innerHTML == document.getElementById('l1_c5').innerHTML) && (document.getElementById('l0_c6').innerHTML == document.getElementById('l1_c6').innerHTML)){
         swal("C'est gagné !", "Vous avez trouvé le mot !", "success");
+    }else{
+        swal ( "Oops" ,  "Vous n'avez pas trouvé le bon mot !" ,  "error" )
     }
 }
