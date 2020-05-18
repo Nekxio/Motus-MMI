@@ -86,37 +86,54 @@ function comparer() {
 
     if (document.getElementById('l0_c1').innerHTML == document.getElementById('l1_c1').innerHTML) {
         document.getElementById('l1_c1').style.backgroundColor = "green";
+        document.getElementById('l1_c1').style.color = "white";
     } else {
         document.getElementById('l1_c1').style.backgroundColor = "red";
+        document.getElementById('l1_c1').style.color = "white";
     }
 
     if (document.getElementById('l0_c2').innerHTML == document.getElementById('l1_c2').innerHTML) {
         document.getElementById('l1_c2').style.backgroundColor = "green";
+        document.getElementById('l1_c2').style.color = "white";
     } else {
         document.getElementById('l1_c2').style.backgroundColor = "red";
+        document.getElementById('l1_c2').style.color = "white";
     }
 
     if (document.getElementById('l0_c3').innerHTML == document.getElementById('l1_c3').innerHTML) {
         document.getElementById('l1_c3').style.backgroundColor = "green";
+        document.getElementById('l1_c3').style.color = "white";
     } else {
         document.getElementById('l1_c3').style.backgroundColor = "red";
+        document.getElementById('l1_c3').style.color = "white";
     }
 
     if (document.getElementById('l0_c4').innerHTML == document.getElementById('l1_c4').innerHTML) {
         document.getElementById('l1_c4').style.backgroundColor = "green";
+        document.getElementById('l1_c4').style.color = "white";
     } else {
         document.getElementById('l1_c4').style.backgroundColor = "red";
+        document.getElementById('l1_c4').style.color = "white";
     }
 
     if (document.getElementById('l0_c5').innerHTML == document.getElementById('l1_c5').innerHTML) {
         document.getElementById('l1_c5').style.backgroundColor = "green";
+        document.getElementById('l1_c5').style.color = "white";
     } else {
         document.getElementById('l1_c5').style.backgroundColor = "red";
+        document.getElementById('l1_c5').style.color = "white";
     }
 
     if (document.getElementById('l0_c6').innerHTML == document.getElementById('l1_c6').innerHTML) {
         document.getElementById('l1_c6').style.backgroundColor = "green";
+        document.getElementById('l1_c6').style.color = "white";
     } else {
         document.getElementById('l1_c6').style.backgroundColor = "red";
+        document.getElementById('l1_c6').style.color = "white";
+    }
+
+
+    if((document.getElementById('l0_c1').innerHTML == document.getElementById('l1_c1').innerHTML) && (document.getElementById('l0_c2').innerHTML == document.getElementById('l1_c2').innerHTML) && (document.getElementById('l0_c3').innerHTML == document.getElementById('l1_c3').innerHTML) && (document.getElementById('l0_c4').innerHTML == document.getElementById('l1_c4').innerHTML) && (document.getElementById('l0_c5').innerHTML == document.getElementById('l1_c5').innerHTML) && (document.getElementById('l0_c6').innerHTML == document.getElementById('l1_c6').innerHTML)){
+        alert("win !");
     }
 }

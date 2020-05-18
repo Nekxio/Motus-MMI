@@ -45,8 +45,40 @@ html {
 @-ms-viewport {
   width: device-width; }
 
+
 ::-webkit-scrollbar {
-  display: none; }
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #666666;
+  border: 0px none #000000;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #666666;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: 0px none #000000;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background-color: transparent;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
