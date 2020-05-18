@@ -39,13 +39,12 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 @-ms-viewport {
   width: device-width; }
-
-
+  
+  
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -70,6 +69,7 @@ html {
   border: 0px none #000000;
   border-radius: 50px;
 }
+
 ::-webkit-scrollbar-track:hover {
   background-color: transparent;
 }
