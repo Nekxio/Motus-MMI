@@ -3386,6 +3386,15 @@ ul#code_couleur li{
     .btn-motus--inside {
       margin-left: -96px;
     }
+
+.swal-button.swal-button--confirm{
+  background-color: #f82727;
+}
+
+.swal-button.swal-button--confirm:hover{
+  background-color: #666666;
+}
+
   @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
