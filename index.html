@@ -41,7 +41,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body onload="noclic();">
+  <body>
     <button onclick="topFunction()" id="backup" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
@@ -84,9 +84,12 @@
                   
                   A chaque tentative, les lettres bien placées sont entourées de rouge et celles mal placées de jaune. Les mots mal orthographiés ou absents du dictionnaire apparaissent en minuscules.
                   
-                  Astuce, un décompte du nombre de lettres restantes s'affiche à droite du champ de saisie.</p>
+                  Astuce, un décompte du nombre de lettres restantes s'affiche à droite du champ de saisie.
                 
-                <p><a id="jeu" href="#jeu" class="btn btn-primary mt-3 py-3 px-5">Jouer</a></p>
+                  Une fois la partie terminée, le jeu se recharge tout seul, c'est magique!
+                </p>
+                
+                <p><a id="jeu" href="#jeu" class="btn btn-primary mt-3 py-3 px-5" onclick="motus_sound.play()">Jouer</a></p>
               </div>
             </div>
           </div>
@@ -105,7 +108,7 @@
               <div class="text-center ftco-animate">
                 <ul id="code_couleur">
                   <li style="color:rgb(92, 202, 40)";>Bonne lettre et<br>au bon endroit</li>
-                  <li style="color:rgb(230, 169, 4)";>Bonne lettre mais<br>pas au bon endroit</li>
+                  <li style="color:rgb(255, 198, 43)";>Bonne lettre mais<br>pas au bon endroit</li>
                   <li style="color:rgb(189, 189, 189)";>Lettre non existante</li>
                 </ul>
               </div>

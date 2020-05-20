@@ -1,3 +1,4 @@
+//Pour éviter un clic inutile
 document.getElementById("propos").focus();
 
 //Un peu de musique pour se mettre dans l'ambiance Motus !
@@ -7,7 +8,7 @@ motus_sound.volume = 0.3;
 
 //Pour écrire que du texte de A à Z !
 function blocage(){	
-    //blocage caractère code 47 à 58 +backspace
+    //blocage caractère code 47 à 58 + backspace
     if(( event.keyCode<65 || event.keyCode>90)&&(event.keyCode!=8)){
         event.returnValue = false;
     }
@@ -23,12 +24,12 @@ var tab_mot = new Array();
 		tab_mot[i] = mot_a_trouver.substr(i,1);
 	}
                 
-var longueur = 6;
+var longueur = 6; //Nombre de caractères du mot
 var lettres_ok = new Array(tab_mot[0],'.','.','.','.','.','.');
-var placements = new Array(0,0,0,0,0,0); // 0 pour pas dans le mot, 1 pour bien placée, 2 pour mal placée
+var placements = new Array(0,0,0,0,0,0);
 var nb_coups = 0; // Nombre de coups
 var nb_coups_max=6; // Nombre de coups autorisés
-var table_html="<table id=\"motus\">";
+var table_html="<table id=\"motus\">"; //Génération du tableau en fonction du nombre de coups max
                     
     for (var j=0; j<=nb_coups_max; j++){
 		table_html +="<tr>";
@@ -47,6 +48,8 @@ var table_html="<table id=\"motus\">";
 					
                     
 //LES FONCTIONS
+
+//Pour afficher la proposition dans le tableau
 function affich_prop (lettre) {
                         
     var mot_prop = document.getElementById('propos').value;
@@ -57,32 +60,8 @@ function affich_prop (lettre) {
     }
         document.getElementById('propos').focus();
 }
-					
-function suppr_lettre() {
-    
-    var mot_prop = document.getElementById('propos').value;
-	var lg = mot_prop.length-1;
-                        
-    mot_prop = mot_prop.substr(0,lg);
-	document.getElementById('propos').value = mot_prop;
 
-}
-					
-function verif_presence (mot) {
-    
-    var presence = false;
-    
-    for (i=0; i<nb_mots; i++) {
-        
-        if (mot == dico[i]) {
-			presence = true;
-		}
-	}
-    
-    return presence;
-						
-}
-                    
+//Fonction principale permettant de comparer le mot aléatoire à la proposition de l'utilisateur                    
 function compare() {			
 	var proposition = document.getElementById('propos').value; //mot proposé
                         
@@ -100,7 +79,7 @@ function compare() {
             if (tab_mot[i] == tab_proposition[i]) { 
 				lettres_ok[i]=tab_mot[i];
 				placements[i] = 1;
-				document.getElementById(nb_coups+'_'+i).style.backgroundColor = 'rgb(112,255,107)';	
+				document.getElementById(nb_coups+'_'+i).style.backgroundColor = 'rgb(92, 202, 40)';	
 				document.getElementById(nb_coups+'_'+i).style.color = 'rgb(0,0,0)';								
             
             }		
@@ -111,7 +90,7 @@ function compare() {
                 for(var j=0; j<longueur; j++){
 					if ((tab_proposition[i] == tab_mot[j]) && (placements[j] == 0)) {
 						placements[j] = 2;
-						document.getElementById(nb_coups+'_'+i).style.backgroundColor = 'rgb(255,241,48)';
+						document.getElementById(nb_coups+'_'+i).style.backgroundColor = 'rgb(255, 234, 43)';
 						j=longueur;
 					}
 				}
