@@ -102,93 +102,21 @@
               <p>Sortirez-vous vainqueur de la grille Motus ?</p>
             </div>
             <div class="col-md-7 text-center heading-section ftco-animate">
-              <div id="table">
-                <table id="motus">
-                  <tbody>
-                    <tr id="first_line">
-                      <td id="l0_c1"></td>
-                      <td id="l0_c2"></td>
-                      <td id="l0_c3"></td>
-                      <td id="l0_c4"></td>
-                      <td id="l0_c5"></td>
-                      <td id="l0_c6"></td>
-                  </tr>
-                    <tr>
-                      <td id="l1_c1"></td>
-                      <td id="l1_c2"></td>
-                      <td id="l1_c3"></td>
-                      <td id="l1_c4"></td>
-                      <td id="l1_c5"></td>
-                      <td id="l1_c6"></td>
-                    </tr>
-                    <tr>
-                      <td id="l2_c1"></td>
-                      <td id="l2_c2"></td>
-                      <td id="l2_c3"></td>
-                      <td id="l2_c4"></td>
-                      <td id="l2_c5"></td>
-                      <td id="l2_c6"></td>
-                    </tr>
-                    <tr>
-                      <td id="l3_c1"></td>
-                      <td id="l3_c2"></td>
-                      <td id="l3_c3"></td>
-                      <td id="l3_c4"></td>
-                      <td id="l3_c5"></td>
-                      <td id="l3_c6"></td>
-                    </tr>
-                    <tr>
-                      <td id="l4_c1"></td>
-                      <td id="l4_c2"></td>
-                      <td id="l4_c3"></td>
-                      <td id="l4_c4"></td>
-                      <td id="l4_c5"></td>
-                      <td id="l4_c6"></td>
-                    </tr>
-                    <tr>
-                      <td id="l5_c1"></td>
-                      <td id="l5_c2"></td>
-                      <td id="l5_c3"></td>
-                      <td id="l5_c4"></td>
-                      <td id="l5_c5"></td>
-                      <td id="l5_c6"></td>
-                    </tr>
-                    <tr>
-                      <td id="l6_c1"></td>
-                      <td id="l6_c2"></td>
-                      <td id="l6_c3"></td>
-                      <td id="l6_c4"></td>
-                      <td id="l6_c5"></td>
-                      <td id="l6_c6"></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p id="mot_genere"></p>
-              </div>
               <div class="text-center ftco-animate">
                 <ul id="code_couleur">
                   <li style="color:rgb(92, 202, 40)";>Bonne lettre et<br>au bon endroit</li>
                   <li style="color:rgb(230, 169, 4)";>Bonne lettre mais<br>pas au bon endroit</li>
-                  <li style="color:rgb(252, 50, 50)";>Lettre non existante</li>
+                  <li style="color:rgb(189, 189, 189)";>Lettre non existante</li>
                 </ul>
               </div>
             </div>
           </div>
           <div id="champbutton" class="justify-content-center text-center mb-5 pb-5 ftco-animate">
-            <input id="mot_user" id="input" maxlength="6" value="" onkeyup='this.value=this.value.toUpperCase()' onkeydown="blocage();">
-            <script type="text/javascript">
-              document.getElementById("mot_user").focus();
-            </script>
-            <button type="button" class="btn btn-motus--primary btn-motus--inside uppercase" onclick="comparer();">OK</button>
+            <input type="text" id="propos" id="input" maxlength="6" value="" onkeypress="javascript:if(quelle_touche(event)){compare();}" onkeyup="majuscule(this.value);" onkeydown="blocage();">
+            <button type="button" class="btn btn-motus--primary btn-motus--inside uppercase" onclick="javascript:compare();">OK</button>
           </div>
         </div>
       </div>
-
-      <footer class="ftco-footer ftco-bg-dark ftco-section">
-            <div class="col-md-12 text-center">
-              <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website was made by Léo Hilaire & Edouard Bucamp</p>
-            </div>
-      </footer>
 
   
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -211,9 +139,18 @@
     <script src="src/js/animation/scrollax.min.js"></script>
     <script src="src/js/animation/main.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript" src="./src/js/dictionnaire/dico_motus.js"></script>
+    <script type="text/javascript" src="./src/js/jeu/script.js"></script>
+
+
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="col-md-12 text-center">
+    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website was made by Léo Hilaire & Edouard Bucamp</p>
+  </div>
+</footer>
     
-    <script src="src/js/jeu/game/game.js"></script>
-    <script src="src/js/jeu/dictionnaire/dictionnaire.js"></script>
+    
     <!-- Bouton haut de page -->
     <script>
       var mybutton = document.getElementById("backup");
