@@ -21,24 +21,6 @@ Si le mot est trouvé, l'équipe rapport 50 points, cette équipe à ensuite le 
 - Pour faire "MOTUS" et gagné 100 points, chaques joueurs doivent tirer une boule chacun et tenter de réaliser une ligne horizontale, verticale ou diagonale de 5 cases.
 - La main passe si une boule noire est attrapée (elle sont aux nombre de 3 par grille)
 
-## Fonctionnement
-
-### Raccourcis clavier
-- Validation du mot avec la touche **Entrer**
-- Suppression de la lettre avec la touche **erase** (**←**) ou **flèche gauche**
-
-- Nouvelle ligne avec la touche **&** ou **1**
-- Lettre bonus avec la touche **é** ou **2**
-- Suppression de la ligne avec la touche **"** ou **3**
-- Remplacement de la ligne avec la touche **'** ou **4**
-- Changement d'équipe ayant la main **(** ou **5**
-
-- Nouveau mot avec la touche **ç** ou **9**
-- Affichage du mot avec la touche **à** ou **0**
-
-- Son du temps écoulé avec la touche **$** (**¤**)
-
-
 ## Inspiration
 - [https://www.france.tv/france-2/motus/]
 
