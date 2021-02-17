@@ -6,6 +6,8 @@ Le jeu télé iconique de France 2 enfin disponible chez vous où VOUS êtes le 
 
 - Pour jouer en local, télécharger le répertoire, puis lancer le fichier **index.html** dans un navigateur.
 
+Si vous n'avez pas envie de vous compliquer la vie, cliquez ici : (Motus MMI)[https://nekxio.github.io/Motus-MMI/]
+
 ## Règles
 
 Pour les règles complètes, voir ce lien: [https://fr.wikipedia.org/wiki/Motus_%28jeu_t%C3%A9l%C3%A9vis%C3%A9%29#R%C3%A8gles_du_jeu]
