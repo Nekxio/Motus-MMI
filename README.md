@@ -6,7 +6,7 @@ Le jeu télé iconique de France 2 enfin disponible chez vous où VOUS êtes le 
 
 - Pour jouer en local, télécharger le répertoire, puis lancer le fichier **index.html** dans un navigateur.
 
-Si vous n'avez pas envie de vous compliquer la vie, cliquez ici : (Motus MMI)[https://nekxio.github.io/Motus-MMI/]
+Si vous n'avez pas envie de vous compliquer la vie, cliquez ici : [Motus MMI](https://nekxio.github.io/Motus-MMI/)
 
 ## Règles
 
